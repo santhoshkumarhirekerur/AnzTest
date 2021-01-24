@@ -42,5 +42,5 @@ git.build.version=${git.build.version}
 
 1. If we do any changes in file of develop branch and push changes to it, **git action** triggers the workflow and execute below steps. After sucessfull workflow execution  we will see the updated image in the docker hub.
 
-![GitHub Logo](/images/build_success.JPG)
+![GitHub Logo](/images/build_success_dev.JPG)
  
