@@ -12,7 +12,7 @@ metadata:
 spec:
   type: LoadBalancer
   ports:
-  - port: 80
+  - port: 8080
     targetPort: 8080
   selector:
     app: anz-gitapp-app
@@ -34,6 +34,6 @@ spec:
     spec:
       containers:
       - name: anz-gitapp-app
-        image: santhoshhirekerur/anztest:0.0.34
+        image: santhoshhirekerur/anztest:0.0.56-SNAPSHOT
         ports:
         - containerPort: 8080
