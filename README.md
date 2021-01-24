@@ -1,3 +1,24 @@
+Deployment steps with docker. Use commands marked in below image.
+
+ ```
+ docker pull santhoshhirekerur/anztest:0.0.56-SNAPSHOT
+ docker run -d -p 8080:8080 docker.io/santhoshhirekerur/anztest:0.0.56-SNAPSHOT
+ curl http://localhost:8080/version
+
+  ```
+
+![GitHub Logo](/images/docker_exe.JPG)
+
+Executing this project with kubernaties. use **anztest-kubernetes.yml** for deployment. Use commands marked in below image.
+
+ ```
+ kubectl apply -f anztest-kubernetes.yml
+kubectl get all --namespace=technical-test
+curl http://localhost:8080/version
+  ```
+![GitHub Logo](/images/k8s_exe.JPG)
+
+
 This is maven java spring boot project.
 
 I starts with explaining main plugins that are used in this project to automate maven build and CI pipelie. 
