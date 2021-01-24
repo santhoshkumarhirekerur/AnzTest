@@ -30,12 +30,9 @@ jobs:
     - name: Checkout master branch
       run: git checkout master
     - name: Git pull master branch
-      run: git pull
-    - name: Prepare release
+      run: |
+        git pull
+    - name: Build and Push image
       env:
         GITHUB_TOKEN: ${{ secrets.MY_GITHUB_TOKEN }}
-      run: mvn --batch-mode release:prepare -Dusername=$GITHUB_ACTOR -Dpassword=$GITHUB_TOKEN
-    - name: Perform release
-      env:
-        DOCKER_HUB_TOKEN: ${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}
-      run: mvn --batch-mode release:perform
+      run: mvn docker:build -DpushImage
