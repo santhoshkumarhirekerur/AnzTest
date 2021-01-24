@@ -95,9 +95,20 @@ git.build.version=${git.build.version}
 Explaination on workflow and version control
 ----------
 
-There are two workflow files main-dev.yml and main.yml  are submitted with this project.
+There are two workflow files **main-dev.yml** and **main.yml**  are submitted with this project.
 
-**main.yml**  When user push any changes to develop branch, this workflow triggers and pull the code, create docker image and push that image to docker hub using secret token key. 
+**main-dev.yml**  When user push any changes to develop branch, this workflow triggers and pull the code, create docker image and push that image to docker hub using secret token key. 
+
+
+**main.yml** is release piple line work flow.  it follows all the same steps as given in main-dev.yml but every build build numner is attached as release version to image. 
+ only last two steps are different.
+ 
+ In last two steps it automitically create release number. every build new release number is attached to docker image. Also after release it prepare the future development branch. it updates version number in pom.xml so that that number is used for post release development.
+ 
+ version>0.0.56-SNAPSHOT</version>
+
+maven release plugin is handing complete release and version cotrol. more details is below
+**https://maven.apache.org/maven-release/maven-release-plugin/examples/non-interactive-release.html
 
 
 
