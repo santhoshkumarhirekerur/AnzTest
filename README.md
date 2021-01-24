@@ -35,8 +35,9 @@ git.build.version=${git.build.version}
    
 **dockerfile-maven-plugin** :This is the main maven plugin to automate complete build process. or used mainly to achive CI pipeline. mvn deploy command executes the complete life cycle of maven. This build the docker image and push image to docker hub.
     
-[More info on plugin is here:] (https://github.com/spotify/dockerfile-maven)
-[Docker repo:] (https://hub.docker.com/repository/docker/santhoshhirekerur/anztest)
+*[More info on plugin is here:] https://github.com/spotify/dockerfile-maven
+
+*[Docker repo:]    https://hub.docker.com/repository/docker/santhoshhirekerur/anztest
   
 
 
