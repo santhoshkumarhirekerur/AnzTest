@@ -12,5 +12,7 @@ dockerfile-maven-plugin :This is the main maven plugin to automate complete buil
   
   Docker repo: https://hub.docker.com/repository/docker/santhoshhirekerur/anztest
   
-    Git
+
+
+![GitHub Logo](images/build_success.JPG.png)
  
