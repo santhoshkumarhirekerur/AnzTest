@@ -97,10 +97,10 @@ Explaination on workflow and version control
 
 There are two workflow files **main-dev.yml** and **main.yml**  are submitted with this project.
 
-**main-dev.yml**  When user push any changes to develop branch, this workflow triggers and pull the code, create docker image and push that image to docker hub using secret token key. 
+**main-dev.yml**  is triggers on develop brach chages, this workflow triggers and pull the code, create docker image and push that image to docker hub using secret tokens.  (This is coverd in test assignment)
 
 
-**main.yml** is release piple line work flow.  it follows all the same steps as given in main-dev.yml but every build build numner is attached as release version to image. 
+**main.yml** is triggers on master brach chages.  it follows all the same steps as given in main-dev.yml but every time new build number is attached mage as version number. 
  only last two steps are different.
  
  In last two steps it automitically create release number. every build new release number is attached to docker image. Also after release it prepare the future development branch. it updates version number in pom.xml so that that number is used for post release development.
