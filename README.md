@@ -11,7 +11,7 @@ Deployment steps with docker. Use commands marked in below image.
   docker run -d -p 8080:8080 docker.io/santhoshhirekerur/anztest:0.0.56-SNAPSHOT
   ```
  
-  **check the result**
+  **check result**
   ```
   curl http://localhost:8080/version
   ```
@@ -34,7 +34,7 @@ Executing this project with kubernaties. use **anztest-kubernetes.yml** for depl
 kubectl get all --namespace=technical-test
 ```
 
- **check the result**
+ **check result**
  ```
  curl http://localhost:8080/version
  ```
