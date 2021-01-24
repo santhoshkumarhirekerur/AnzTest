@@ -30,6 +30,8 @@ curl http://localhost:8080/version
 ![GitHub Logo](/images/k8s_exe.JPG)
 
 
+PRODJECT DETAILS
+------------
 This is maven java spring boot project.
 
 I starts with explaining main plugins that are used in this project to automate maven build and CI pipelie. 
