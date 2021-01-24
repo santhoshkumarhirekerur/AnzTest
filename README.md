@@ -1,32 +1,32 @@
 Deployment steps with docker. Use commands marked in below image.
 
- ```
+
  **Docke pull image to local**
- docker pull santhoshhirekerur/anztest:0.0.56-SNAPSHOT
+  ```docker pull santhoshhirekerur/anztest:0.0.56-SNAPSHOT  ```
  
   **run docker **
- docker run -d -p 8080:8080 docker.io/santhoshhirekerur/anztest:0.0.56-SNAPSHOT
+  ``` docker run -d -p 8080:8080 docker.io/santhoshhirekerur/anztest:0.0.56-SNAPSHOT  ```
  
-  **Below command is check the result **
- curl http://localhost:8080/version
+  **check the result **
+  ```curl http://localhost:8080/version  ```
 
-  ```
+ 
 
 ![GitHub Logo](/images/docker_exe.JPG)
 
 Executing this project with kubernaties. use **anztest-kubernetes.yml** for deployment. Use commands marked in below image.
 
- ```
+ 
   **Deploy to K8s to namespace technical-test. **
- kubectl apply -f anztest-kubernetes.yml
+ ``` kubectl apply -f anztest-kubernetes.yml ```
  
   **check pod and services in namespace technical-test. **
  
-kubectl get all --namespace=technical-test
+``` kubectl get all --namespace=technical-test  ```
 
- ** check the result  **
-curl http://localhost:8080/version
-  ```
+ **check the result  **
+ ```curl http://localhost:8080/version  ```
+ 
 ![GitHub Logo](/images/k8s_exe.JPG)
 
 
