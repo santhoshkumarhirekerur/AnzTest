@@ -1,6 +1,6 @@
 This is maven java spring boot project.
 
-I start with explaining main Plugins that are used in this project to automate maven build and CI pipelie. 
+I starts with explaining main plugins that are used in this project to automate maven build and CI pipelie. 
 
 **pl.project13.maven(git-commit-id-plugin)** : This plugin is help to capture all git updated infomration. when program starts it dynamically creates git properties file in target/src/main/resources folder. 
 
@@ -40,6 +40,7 @@ git.build.version=${git.build.version}
 *[Docker repo:]    https://hub.docker.com/repository/docker/santhoshhirekerur/anztest
   
 
+1. 
 
 ![GitHub Logo](images/build_success.JPG.png)
  
