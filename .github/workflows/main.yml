@@ -29,6 +29,8 @@ jobs:
         git config --global author.name "${GITHUB_ACTOR}"
     - name: Checkout master branch
       run: git checkout master
+    - name: Git pull master branch
+      run: git pull
     - name: Prepare release
       env:
         GITHUB_TOKEN: ${{ secrets.MY_GITHUB_TOKEN }}
