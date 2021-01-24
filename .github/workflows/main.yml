@@ -35,4 +35,4 @@ jobs:
     - name: Build and Push image
       env:
         GITHUB_TOKEN: ${{ secrets.MY_GITHUB_TOKEN }}
-      run: mvn package dockerfile:build verify dockerfile:push
+      run: mvn deploy
