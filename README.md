@@ -92,3 +92,7 @@ git.build.version=${git.build.version}
 
 ![GitHub Logo](/images/build_success_dev.JPG)
  
+Explaination on workflow and version control
+----------
+
+
