@@ -95,4 +95,10 @@ git.build.version=${git.build.version}
 Explaination on workflow and version control
 ----------
 
+There are two workflow files main-dev.yml and main.yml  are submitted with this project.
+
+**main.yml**  When user push any changes to develop branch, this workflow triggers and pull the code, create docker image and push that image to docker hub using secret token key. 
+
+
+
 
