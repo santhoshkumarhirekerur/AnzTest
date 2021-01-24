@@ -9,11 +9,11 @@
 	</parent>
 	<scm>
 		<developerConnection>scm:git:https://github.com/santhoshkumarhirekerur/AnzTest</developerConnection>
-		<tag>v0.0.53</tag>
+		<tag>HEAD</tag>
 	</scm>
 	<groupId>com.anz</groupId>
 	<artifactId>anztest</artifactId>
-	<version>0.0.53</version>
+	<version>0.0.54-SNAPSHOT</version>
 	<name>Anztest</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
