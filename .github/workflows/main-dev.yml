@@ -1,0 +1,38 @@
+name: Release workflow
+on:
+  push:
+    branches: develop
+  
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    environment: docker-maven-ghactions-release
+    steps:
+    - uses: actions/checkout@v1
+      with:
+        ref: master
+    - name: Login to Docker Hub
+      uses: docker/login-action@v1
+      with:
+        username: ${{ secrets.DOCKER_HUB_USER_NAME }}
+        password: ${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}
+          
+    - name: Set up JDK 1.8
+      uses: actions/setup-java@v1
+      with:
+        java-version: 1.8
+    - name: Configure git
+      run: |
+        git config --global committer.email "noreply@github.com"
+        git config --global committer.name "GitHub"
+        git config --global author.email "${GITHUB_ACTOR}@users.noreply.github.com"
+        git config --global author.name "${GITHUB_ACTOR}"
+    - name: Checkout master branch
+      run: git checkout master
+    - name: Git pull master branch
+      run: |
+        git pull
+    - name: Build and Push image
+      env:
+        GITHUB_TOKEN: ${{ secrets.MY_GITHUB_TOKEN }}
+      run: mvn deploy
