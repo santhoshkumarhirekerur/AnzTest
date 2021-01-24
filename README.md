@@ -42,5 +42,5 @@ git.build.version=${git.build.version}
 
 1. 
 
-![GitHub Logo](/images/build_success.JPG.png)
+![GitHub Logo](/images/build_success.JPG)
  
