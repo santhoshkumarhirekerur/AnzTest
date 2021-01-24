@@ -8,7 +8,7 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<scm>
-		<developerConnection>scm:git:https://github.com/santhoshkumarhirekerur/SanthoshTest</developerConnection>
+		<developerConnection>scm:git:https://github.com/santhoshkumarhirekerur/AnzTest</developerConnection>
 		<tag>HEAD</tag>
 	</scm>
 	<groupId>com.anz</groupId>
@@ -84,7 +84,7 @@
 					</descriptorRefs>
 				</configuration>
 			</plugin>
-			<plugin>
+			<pl>
 				<groupId>com.spotify</groupId>
 				<artifactId>dockerfile-maven-plugin</artifactId>
 				<version>${dockerfile.version}</version>
