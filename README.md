@@ -41,7 +41,8 @@ kubectl get all --namespace=technical-test
  
 ![GitHub Logo](/images/k8s_exe.JPG)
 
-**Note: namespace and version has to be replaced with right version number. In real tile helm chat is used to be stored these for deployment**
+
+**Note: Values like namespace and version values in 'anztest-kubernetes.yml' has to be replaced with right version number before deployment. In real application helm chat is used to be stored these values for dynamic deployment**
 
 PRODJECT DETAILS
 ------------
